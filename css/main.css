@@ -23,12 +23,14 @@ a {
 p,
 h2,
 h3,
-span {
+span,
+a {
   font-family: "Roboto", sans-serif;
   color: black;
 }
 
-h1 {
+h1,
+h4 {
   font-family: "Shrikhand", cursive;
   color: black;
 }
@@ -51,12 +53,39 @@ h2 {
 }
 
 .restaurants {
-  padding: 2rem;
+  padding: 6rem 2rem;
   background-color: #f3f3f3;
   display: -ms-grid;
   display: grid;
   grid-auto-rows: auto;
   grid-gap: 3rem;
+}
+
+.footer {
+  padding: 2rem;
+  background-color: #222222;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__heading {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.footer__text:not(:first-child) {
+  margin-bottom: 0.4rem;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .location {
@@ -227,6 +256,15 @@ h2 {
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 
+.restaurant__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
 .restaurant__img {
   width: 100%;
   height: auto;
@@ -279,6 +317,7 @@ h2 {
 
 .restaurant__icon {
   font-size: 2rem;
+  z-index: 3;
 }
 
 .restaurant__icon:hover {

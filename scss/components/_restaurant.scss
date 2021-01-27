@@ -6,6 +6,15 @@
 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+
   &__img {
     width: 100%;
     height: auto;
@@ -44,6 +53,7 @@
 
   &__icon {
     font-size: 2rem;
+    z-index: 3;
 
     &:hover {
       cursor: pointer;
