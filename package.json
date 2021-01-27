@@ -1,0 +1,25 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "TomEvertzen_3_01262021",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "sass": "^1.32.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomevertzen/ohmyfood.git"
+  },
+  "author": "Tom Evertzen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomevertzen/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/tomevertzen/ohmyfood#readme"
+}

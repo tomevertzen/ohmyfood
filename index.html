@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OhMyFood</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,300&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -13,8 +24,12 @@
       <section class="explore">
         <!-- LOCATION BAR START HERE -->
         <div class="location">
-          <i class="location__icon">[ICON] </i>
-          <input type="text" class="location__input" />
+          <input
+            type="text"
+            class="location__input"
+            placeholder="Paris, Belleville"
+          />
+          <i class="location__icon fas fa-map-marker-alt"></i>
         </div>
         <!-- INTRO SECTION STARTS HERE -->
         <div class="intro">
@@ -50,7 +65,7 @@
         <h2 class="restaurants__heading">Restaurants</h2>
         <!-- FIRST RESTAURANT CARD STARTS HERE -->
         <article class="restaurant">
-          <div class="restaurant__new">New</div>
+          <span class="restaurant__new">New</span>
           <div class="restaurant__img-container">
             <img src="#blank" alt="" class="restaurant__img" />
           </div>
@@ -61,7 +76,7 @@
           </div>
         </article>
         <article class="restaurant">
-          <div class="restaurant__new">New</div>
+          <span class="restaurant__new">New</span>
           <div class="restaurant__img-container">
             <img src="#blank" alt="" class="restaurant__img" />
           </div>

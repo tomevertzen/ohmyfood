@@ -1,0 +1,36 @@
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: $color-grey-tertiary;
+
+  background-color: $color-grey-secondary;
+  height: 3.5rem;
+  border-top: 2px $color-grey-tertiary solid;
+
+  &__input {
+    height: 100%;
+    font-size: 1.4rem;
+    outline: none;
+    background-color: $color-grey-secondary;
+    border-style: solid;
+    border: none;
+    order: 2;
+    margin-left: 0.8rem;
+
+    &:focus {
+      outline: none;
+
+      ~ .location__icon {
+        color: $color-primary;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__icon {
+    order: 1;
+    transition: color 0.4s;
+  }
+}

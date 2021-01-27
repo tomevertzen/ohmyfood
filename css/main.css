@@ -1,0 +1,98 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  color: #1d1d1d;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5rem;
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  color: #1d1d1d;
+  background-color: #e4e4e4;
+  height: 3.5rem;
+  border-top: 2px #1d1d1d solid;
+}
+
+.location__input {
+  height: 100%;
+  font-size: 1.4rem;
+  outline: none;
+  background-color: #e4e4e4;
+  border-style: solid;
+  border: none;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 0.8rem;
+}
+
+.location__input:focus {
+  outline: none;
+}
+
+.location__input:focus ~ .location__icon {
+  color: #9356dc;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.location__icon {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+/*# sourceMappingURL=main.css.map */
