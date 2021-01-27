@@ -3,11 +3,12 @@
   justify-content: center;
   align-items: center;
   border: none;
-  color: $color-grey-tertiary;
+  color: $color-grey-quaternary;
 
   background-color: $color-grey-secondary;
   height: 3.5rem;
   border-top: 2px $color-grey-tertiary solid;
+  padding-left: 5.5rem;
 
   &__input {
     height: 100%;

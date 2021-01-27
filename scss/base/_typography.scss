@@ -1,12 +1,14 @@
 p,
 h2,
-h3 {
+h3,
+span {
   font-family: "Roboto", sans-serif;
+  color: black;
 }
 
 h1 {
   font-family: "Shrikhand", cursive;
-  color: $color-grey-tertiary;
+  color: black;
 }
 
 h2 {
