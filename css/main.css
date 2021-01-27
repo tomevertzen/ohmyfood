@@ -50,6 +50,15 @@ h2 {
   height: 5rem;
 }
 
+.restaurants {
+  padding: 2rem;
+  background-color: #f3f3f3;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 3rem;
+}
+
 .location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,5 +216,93 @@ h2 {
   font-size: 1.6rem;
   color: #222222;
   font-weight: 500;
+}
+
+.restaurant {
+  background-color: white;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.restaurant__img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.restaurant__img-container {
+  width: 100%;
+  padding-top: 51.9%;
+  overflow: hidden;
+  position: relative;
+}
+
+.restaurant__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 7rem;
+  font-size: 1.4rem;
+  padding: 1.2rem;
+  margin-right: 2%;
+}
+
+.restaurant__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.restaurant__heading {
+  font-size: 1.6rem;
+}
+
+.restaurant__icon {
+  font-size: 2rem;
+}
+
+.restaurant__icon:hover {
+  cursor: pointer;
+}
+
+.restaurant__icon--favorite {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.restaurant__new {
+  position: absolute;
+  z-index: 10;
+  left: 75%;
+  top: 5%;
+  padding: 0.8rem 2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: green;
+  background-color: #99e2d0;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 /*# sourceMappingURL=main.css.map */
