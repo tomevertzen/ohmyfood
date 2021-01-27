@@ -95,4 +95,40 @@ h2 {
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
 }
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 2rem;
+  background-color: #f7f7f7;
+}
+
+.intro__heading {
+  margin-bottom: 2rem;
+}
+
+.intro__text {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.intro__button {
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#be429d), color-stop(53%, #6f28c5));
+  background-image: linear-gradient(180deg, #be429d 0%, #6f28c5 53%);
+  border: none;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
+}
 /*# sourceMappingURL=main.css.map */
