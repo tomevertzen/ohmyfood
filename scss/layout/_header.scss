@@ -3,4 +3,18 @@
   align-items: center;
   justify-content: center;
   height: 5rem;
+  position: relative;
+
+  &__back {
+    position: absolute;
+    font-size: 2rem;
+    left: 4%;
+    top: 15px;
+    transition: transform 0.1s, color 0.1s;
+
+    &:hover {
+      color: $color-primary;
+      transform: scale(1.2);
+    }
+  }
 }

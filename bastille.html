@@ -4,20 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bastille</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
-      <i class="header__back">[ICON]</i>
+      <a href="index.html"><i class="fas fa-arrow-left header__back"></i></a>
       <h1 class="header__heading">ohmyfood</h1>
     </header>
-    <main class="restaurant__main">
-      <div class="responsive-img__container">
-        <img src="#blank" alt="" class="responsive-img" />
-      </div>
+    <main class="menu__main">
       <section class="menu">
+        <div class="menu__img-container">
+          <img src="./img/restaurant3.jpg" alt="" class="menu__img" />
+        </div>
         <header class="menu__header">
           <h2 class="menu__heading">Bastille</h2>
-          <i class="menu__favorite">[ICON]</i>
+          <i class="menu__favorite far fa-heart"></i>
         </header>
 
         <!-- ENTREES STARS HERE -->

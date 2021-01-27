@@ -1,5 +1,5 @@
 .restaurant {
-  background-color: white;
+  background-color: $color-background-white;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
@@ -82,7 +82,7 @@
     padding: 0.8rem 2rem;
     font-weight: 500;
     font-size: 1.2rem;
-    color: green;
+    color: $color-font-green;
 
     background-color: $color-tertiary;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);

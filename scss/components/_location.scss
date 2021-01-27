@@ -3,18 +3,18 @@
   justify-content: center;
   align-items: center;
   border: none;
-  color: $color-grey-quaternary;
+  color: $color-font-dark-grey;
 
-  background-color: $color-grey-secondary;
+  background-color: $color-background-secondary;
   height: 3.5rem;
-  border-top: 2px $color-grey-tertiary solid;
+  border-top: 2px $color-font-dark-grey solid;
   padding-left: 5.5rem;
 
   &__input {
     height: 100%;
     font-size: 1.4rem;
     outline: none;
-    background-color: $color-grey-secondary;
+    background-color: $color-background-secondary;
     border-style: solid;
     border: none;
     order: 2;

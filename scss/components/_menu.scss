@@ -1,0 +1,45 @@
+.menu {
+  background-color: $color-background-primary;
+
+  &__img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &-container {
+      width: 100%;
+      padding-top: 70.6%;
+      position: relative;
+      overflow: hidden;
+      z-index: 4;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 5;
+    position: relative;
+    top: -3rem;
+    background-color: $color-background-primary;
+
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 35px 35px 0 0;
+  }
+
+  &__heading {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.6rem;
+  }
+
+  &__favorite {
+    font-size: 2rem;
+    height: 100%;
+    margin-right: 2rem;
+  }
+}

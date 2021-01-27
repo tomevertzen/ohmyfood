@@ -3,11 +3,11 @@
   flex-direction: column;
   align-items: flex-start;
 
-  padding: 2rem;
+  padding: 4rem 2rem;
 
   &__heading {
-    margin: 2.5rem 0;
-    color: $color-grey-quaternary;
+    margin-bottom: 2.4rem;
+    color: $color-font-black;
   }
 
   &__bar {
@@ -18,7 +18,7 @@
     width: 100%;
     border-radius: 15px;
 
-    background-color: $color-grey-primary;
+    background-color: $color-background-primary;
 
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
       0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
@@ -32,11 +32,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 2rem;
-      height: 2rem;
+      width: 2.2rem;
+      height: 2.2rem;
       font-size: 1.4rem;
 
-      color: white;
+      color: $color-font-white;
       background-color: $color-primary;
       border-radius: 50%;
 
@@ -47,13 +47,13 @@
     &-icon {
       margin-left: 1.5rem;
       font-size: 1.6rem;
-      color: $color-grey-tertiary;
+      color: $color-font-grey;
     }
 
     &-text {
       margin-left: 1rem;
       font-size: 1.6rem;
-      color: $color-grey-quaternary;
+      color: $color-font-black;
       font-weight: 500;
     }
   }

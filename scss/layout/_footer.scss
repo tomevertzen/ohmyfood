@@ -1,21 +1,25 @@
 .footer {
   padding: 2rem;
-  background-color: $color-grey-quaternary;
+  background-color: $color-background-tertiary;
   color: white;
   display: flex;
   flex-direction: column;
 
   &__heading {
-    color: white;
+    color: $color-font-white;
     font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: 400;
   }
 
+  &__icon {
+    margin-right: 0.3rem;
+  }
+
   &__text {
     &:not(:first-child) {
       margin-bottom: 0.4rem;
-      color: white;
+      color: $color-font-white;
       font-weight: 400;
       font-size: 1.5rem;
     }
