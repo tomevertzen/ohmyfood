@@ -1,0 +1,91 @@
+.dish {
+  background-color: $color-background-white;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  font-size: 14px;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+
+  &__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: width 0.8s;
+    padding: 10px;
+    min-width: 0;
+  }
+
+  &__text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__description {
+    min-width: 0;
+  }
+
+  &__price {
+    white-space: nowrap;
+    align-self: flex-end;
+    padding-left: 8px;
+  }
+
+  &__add {
+    width: 54px;
+    background-color: $color-tertiary;
+    height: 100%;
+    transform: translateX(55px);
+    transition: transform 0.8s;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+
+    // CENTERING THE ICON INSIDE THE ADD BUTTON
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-icon {
+      color: $color-font-white;
+      font-size: 2.2rem;
+      transition: transform 0.8s;
+    }
+  }
+
+  &:hover &__add {
+    width: 55px;
+    height: 100%;
+    transform: translateX(0);
+
+    &-icon {
+      transform: rotate(360deg);
+    }
+  }
+
+  &:hover &__flex {
+    width: calc(100% - 55px);
+    min-width: 0;
+  }
+
+  &:hover &__description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+  }
+}

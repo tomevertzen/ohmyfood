@@ -110,6 +110,11 @@ h2 {
   font-size: 1.5rem;
 }
 
+.menu__section {
+  padding: 0 2rem;
+  margin-bottom: 5rem;
+}
+
 .location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,5 +421,139 @@ h2 {
   font-size: 2rem;
   height: 100%;
   margin-right: 2rem;
+}
+
+.menu__section-heading {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #353535;
+  margin-bottom: 1.8rem;
+  margin-left: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.menu__section-heading::after {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 4rem;
+  height: 2px;
+  content: "";
+  background-color: #99e2d0;
+}
+
+.dish {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  font-size: 14px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.dish__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+.dish__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-transition: width 0.8s;
+  transition: width 0.8s;
+  padding: 10px;
+  min-width: 0;
+}
+
+.dish__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dish__description {
+  min-width: 0;
+}
+
+.dish__price {
+  white-space: nowrap;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-left: 8px;
+}
+
+.dish__add {
+  width: 54px;
+  background-color: #99e2d0;
+  height: 100%;
+  -webkit-transform: translateX(55px);
+          transform: translateX(55px);
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dish__add-icon {
+  color: #fff;
+  font-size: 2.2rem;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+.dish:hover .dish__add {
+  width: 55px;
+  height: 100%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.dish:hover .dish__add-icon {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.dish:hover .dish__flex {
+  width: calc(100% - 55px);
+  min-width: 0;
+}
+
+.dish:hover .dish__description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 /*# sourceMappingURL=main.css.map */
